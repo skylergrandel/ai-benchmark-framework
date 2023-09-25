@@ -1,0 +1,505 @@
+{
+  "name": "CodeReuseBenchmark",
+  "problems": [
+    {
+      "identifier": "Problem1",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_1(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_1(a, b):",
+      "test_suite": "test_suite_1.py"
+    },
+    {
+      "identifier": "Problem2",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_2(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_2(s):",
+      "test_suite": "test_suite_2.py"
+    },
+    {
+      "identifier": "Problem3",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_3(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_3(a, b):",
+      "test_suite": "test_suite_3.py"
+    },
+    {
+      "identifier": "Problem4",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_4(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_4(numbers):",
+      "test_suite": "test_suite_4.py"
+    },
+    {
+      "identifier": "Problem5",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_5(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_5(numbers):",
+      "test_suite": "test_suite_5.py"
+    },
+    {
+      "identifier": "Problem6",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_6(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_6(numbers):",
+      "test_suite": "test_suite_6.py"
+    },
+    {
+      "identifier": "Problem7",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_7(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_7(s):",
+      "test_suite": "test_suite_7.py"
+    },
+    {
+      "identifier": "Problem8",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_8(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_8(a, b):",
+      "test_suite": "test_suite_8.py"
+    },
+    {
+      "identifier": "Problem9",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_9(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_9(numbers):",
+      "test_suite": "test_suite_9.py"
+    },
+    {
+      "identifier": "Problem10",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_10(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_10(numbers):",
+      "test_suite": "test_suite_10.py"
+    },
+    {
+      "identifier": "Problem11",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_11(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_11(a, b):",
+      "test_suite": "test_suite_11.py"
+    },
+    {
+      "identifier": "Problem12",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_12(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_12(a, b):",
+      "test_suite": "test_suite_12.py"
+    },
+    {
+      "identifier": "Problem13",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_13(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_13(s):",
+      "test_suite": "test_suite_13.py"
+    },
+    {
+      "identifier": "Problem14",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_14(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_14(a, b):",
+      "test_suite": "test_suite_14.py"
+    },
+    {
+      "identifier": "Problem15",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_15(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_15(numbers):",
+      "test_suite": "test_suite_15.py"
+    },
+    {
+      "identifier": "Problem16",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_16(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_16(s):",
+      "test_suite": "test_suite_16.py"
+    },
+    {
+      "identifier": "Problem17",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_17(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_17(s):",
+      "test_suite": "test_suite_17.py"
+    },
+    {
+      "identifier": "Problem18",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_18(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_18(numbers):",
+      "test_suite": "test_suite_18.py"
+    },
+    {
+      "identifier": "Problem19",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_19(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_19(a, b):",
+      "test_suite": "test_suite_19.py"
+    },
+    {
+      "identifier": "Problem20",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_20(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_20(a, b):",
+      "test_suite": "test_suite_20.py"
+    },
+    {
+      "identifier": "Problem21",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_21(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_21(a, b):",
+      "test_suite": "test_suite_21.py"
+    },
+    {
+      "identifier": "Problem22",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_22(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_22(a, b):",
+      "test_suite": "test_suite_22.py"
+    },
+    {
+      "identifier": "Problem23",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_23(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_23(s):",
+      "test_suite": "test_suite_23.py"
+    },
+    {
+      "identifier": "Problem24",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_24(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_24(a, b):",
+      "test_suite": "test_suite_24.py"
+    },
+    {
+      "identifier": "Problem25",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_25(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_25(numbers):",
+      "test_suite": "test_suite_25.py"
+    },
+    {
+      "identifier": "Problem26",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_26(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_26(s):",
+      "test_suite": "test_suite_26.py"
+    },
+    {
+      "identifier": "Problem27",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_27(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_27(a, b):",
+      "test_suite": "test_suite_27.py"
+    },
+    {
+      "identifier": "Problem28",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_28(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_28(numbers):",
+      "test_suite": "test_suite_28.py"
+    },
+    {
+      "identifier": "Problem29",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_29(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_29(s):",
+      "test_suite": "test_suite_29.py"
+    },
+    {
+      "identifier": "Problem30",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_30(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_30(s):",
+      "test_suite": "test_suite_30.py"
+    },
+    {
+      "identifier": "Problem31",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_31(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_31(a, b):",
+      "test_suite": "test_suite_31.py"
+    },
+    {
+      "identifier": "Problem32",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_32(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_32(s):",
+      "test_suite": "test_suite_32.py"
+    },
+    {
+      "identifier": "Problem33",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_33(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_33(a, b):",
+      "test_suite": "test_suite_33.py"
+    },
+    {
+      "identifier": "Problem34",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_34(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_34(numbers):",
+      "test_suite": "test_suite_34.py"
+    },
+    {
+      "identifier": "Problem35",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_35(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_35(a, b):",
+      "test_suite": "test_suite_35.py"
+    },
+    {
+      "identifier": "Problem36",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_36(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_36(a, b):",
+      "test_suite": "test_suite_36.py"
+    },
+    {
+      "identifier": "Problem37",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_37(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_37(numbers):",
+      "test_suite": "test_suite_37.py"
+    },
+    {
+      "identifier": "Problem38",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_38(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_38(numbers):",
+      "test_suite": "test_suite_38.py"
+    },
+    {
+      "identifier": "Problem39",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_39(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_39(a, b):",
+      "test_suite": "test_suite_39.py"
+    },
+    {
+      "identifier": "Problem40",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_40(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_40(s):",
+      "test_suite": "test_suite_40.py"
+    },
+    {
+      "identifier": "Problem41",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_41(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_41(numbers):",
+      "test_suite": "test_suite_41.py"
+    },
+    {
+      "identifier": "Problem42",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_42(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_42(s):",
+      "test_suite": "test_suite_42.py"
+    },
+    {
+      "identifier": "Problem43",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_43(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_43(s):",
+      "test_suite": "test_suite_43.py"
+    },
+    {
+      "identifier": "Problem44",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_44(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_44(numbers):",
+      "test_suite": "test_suite_44.py"
+    },
+    {
+      "identifier": "Problem45",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_45(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_45(numbers):",
+      "test_suite": "test_suite_45.py"
+    },
+    {
+      "identifier": "Problem46",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_46(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_46(numbers):",
+      "test_suite": "test_suite_46.py"
+    },
+    {
+      "identifier": "Problem47",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_47(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_47(numbers):",
+      "test_suite": "test_suite_47.py"
+    },
+    {
+      "identifier": "Problem48",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_48(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_48(a, b):",
+      "test_suite": "test_suite_48.py"
+    },
+    {
+      "identifier": "Problem49",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_49(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_49(numbers):",
+      "test_suite": "test_suite_49.py"
+    },
+    {
+      "identifier": "Problem50",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_50(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_50(s):",
+      "test_suite": "test_suite_50.py"
+    },
+    {
+      "identifier": "Problem51",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_51(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_51(s):",
+      "test_suite": "test_suite_51.py"
+    },
+    {
+      "identifier": "Problem52",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_52(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_52(a, b):",
+      "test_suite": "test_suite_52.py"
+    },
+    {
+      "identifier": "Problem53",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_53(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_53(a, b):",
+      "test_suite": "test_suite_53.py"
+    },
+    {
+      "identifier": "Problem54",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_54(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_54(numbers):",
+      "test_suite": "test_suite_54.py"
+    },
+    {
+      "identifier": "Problem55",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_55(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_55(a, b):",
+      "test_suite": "test_suite_55.py"
+    },
+    {
+      "identifier": "Problem56",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_56(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_56(s):",
+      "test_suite": "test_suite_56.py"
+    },
+    {
+      "identifier": "Problem57",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_57(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_57(a, b):",
+      "test_suite": "test_suite_57.py"
+    },
+    {
+      "identifier": "Problem58",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_58(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_58(s):",
+      "test_suite": "test_suite_58.py"
+    },
+    {
+      "identifier": "Problem59",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_59(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_59(a, b):",
+      "test_suite": "test_suite_59.py"
+    },
+    {
+      "identifier": "Problem60",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_60(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_60(s):",
+      "test_suite": "test_suite_60.py"
+    },
+    {
+      "identifier": "Problem61",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_61(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_61(a, b):",
+      "test_suite": "test_suite_61.py"
+    },
+    {
+      "identifier": "Problem62",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_62(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_62(numbers):",
+      "test_suite": "test_suite_62.py"
+    },
+    {
+      "identifier": "Problem63",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_63(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_63(numbers):",
+      "test_suite": "test_suite_63.py"
+    },
+    {
+      "identifier": "Problem64",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_64(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_64(numbers):",
+      "test_suite": "test_suite_64.py"
+    },
+    {
+      "identifier": "Problem65",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_65(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_65(numbers):",
+      "test_suite": "test_suite_65.py"
+    },
+    {
+      "identifier": "Problem66",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_66(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_66(a, b):",
+      "test_suite": "test_suite_66.py"
+    },
+    {
+      "identifier": "Problem67",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_67(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_67(a, b):",
+      "test_suite": "test_suite_67.py"
+    },
+    {
+      "identifier": "Problem68",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_68(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_68(a, b):",
+      "test_suite": "test_suite_68.py"
+    },
+    {
+      "identifier": "Problem69",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_69(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_69(a, b):",
+      "test_suite": "test_suite_69.py"
+    },
+    {
+      "identifier": "Problem70",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_70(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_70(a, b):",
+      "test_suite": "test_suite_70.py"
+    },
+    {
+      "identifier": "Problem71",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_71(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_71(s):",
+      "test_suite": "test_suite_71.py"
+    },
+    {
+      "identifier": "Problem72",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_72(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_72(numbers):",
+      "test_suite": "test_suite_72.py"
+    },
+    {
+      "identifier": "Problem73",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_73(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_73(numbers):",
+      "test_suite": "test_suite_73.py"
+    },
+    {
+      "identifier": "Problem74",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_74(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_74(a, b):",
+      "test_suite": "test_suite_74.py"
+    },
+    {
+      "identifier": "Problem75",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_75(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_75(a, b):",
+      "test_suite": "test_suite_75.py"
+    },
+    {
+      "identifier": "Problem76",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_76(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_76(a, b):",
+      "test_suite": "test_suite_76.py"
+    },
+    {
+      "identifier": "Problem77",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_77(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_77(s):",
+      "test_suite": "test_suite_77.py"
+    },
+    {
+      "identifier": "Problem78",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_78(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_78(s):",
+      "test_suite": "test_suite_78.py"
+    },
+    {
+      "identifier": "Problem79",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_79(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_79(s):",
+      "test_suite": "test_suite_79.py"
+    },
+    {
+      "identifier": "Problem80",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_80(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_80(numbers):",
+      "test_suite": "test_suite_80.py"
+    },
+    {
+      "identifier": "Problem81",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_81(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_81(numbers):",
+      "test_suite": "test_suite_81.py"
+    },
+    {
+      "identifier": "Problem82",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_82(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_82(a, b):",
+      "test_suite": "test_suite_82.py"
+    },
+    {
+      "identifier": "Problem83",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_83(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_83(a, b):",
+      "test_suite": "test_suite_83.py"
+    },
+    {
+      "identifier": "Problem84",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_84(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_84(numbers):",
+      "test_suite": "test_suite_84.py"
+    },
+    {
+      "identifier": "Problem85",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_85(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_85(a, b):",
+      "test_suite": "test_suite_85.py"
+    },
+    {
+      "identifier": "Problem86",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_86(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_86(numbers):",
+      "test_suite": "test_suite_86.py"
+    },
+    {
+      "identifier": "Problem87",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_87(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_87(s):",
+      "test_suite": "test_suite_87.py"
+    },
+    {
+      "identifier": "Problem88",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_88(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_88(numbers):",
+      "test_suite": "test_suite_88.py"
+    },
+    {
+      "identifier": "Problem89",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_89(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_89(a, b):",
+      "test_suite": "test_suite_89.py"
+    },
+    {
+      "identifier": "Problem90",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_90(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_90(numbers):",
+      "test_suite": "test_suite_90.py"
+    },
+    {
+      "identifier": "Problem91",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_91(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_91(numbers):",
+      "test_suite": "test_suite_91.py"
+    },
+    {
+      "identifier": "Problem92",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_92(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_92(numbers):",
+      "test_suite": "test_suite_92.py"
+    },
+    {
+      "identifier": "Problem93",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_93(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_93(a, b):",
+      "test_suite": "test_suite_93.py"
+    },
+    {
+      "identifier": "Problem94",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_94(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_94(a, b):",
+      "test_suite": "test_suite_94.py"
+    },
+    {
+      "identifier": "Problem95",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_95(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_95(s):",
+      "test_suite": "test_suite_95.py"
+    },
+    {
+      "identifier": "Problem96",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_96(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_96(numbers):",
+      "test_suite": "test_suite_96.py"
+    },
+    {
+      "identifier": "Problem97",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_97(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_97(s):",
+      "test_suite": "test_suite_97.py"
+    },
+    {
+      "identifier": "Problem98",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a list of integers `numbers`. The function should return the sum of the squares of each integer in the list.\n\nPrototype: def sum_of_squares_98(numbers):\n\nCreate another function that also takes a list of integers `numbers`. This function should return the sum of the squares of only the even integers in the list\n\nPrototype: def sum_of_squares_of_evens_98(numbers):",
+      "test_suite": "test_suite_98.py"
+    },
+    {
+      "identifier": "Problem99",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a string `s` and returns its reverse.\n\nPrototype: def string_reverse_99(s):\n\nCreate another function that takes a string `s`, reverses it, and then converts it to uppercase\n\nPrototype: def reverse_and_uppercase_99(s):",
+      "test_suite": "test_suite_99.py"
+    },
+    {
+      "identifier": "Problem100",
+      "prompt": "You will act as a code generator. Generate Python code based on the function descriptions and prototypes provided. Assume that all functions are located in the same file and do not use any import statements. The output should be executable Python code only, without comments or extra text.\n\nCreate a function that takes a non-negative integer `n` and returns its factorial.\n\nPrototype: def factorial_100(n):\n\nCreate another function that takes two non-negative integers `a` and `b`, calculates the sum, and then returns the factorial of the sum\n\nPrototype: def factorial_of_sum_100(a, b):",
+      "test_suite": "test_suite_100.py"
+    }
+  ]
+}
