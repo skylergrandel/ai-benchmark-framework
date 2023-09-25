@@ -45,7 +45,7 @@ The repository is structured as follows:
    - Create a new Python file defining a run() function. This function should take the problem prompt as input and return the generated solution.
    - You can look at run_func.py as an example of how to structure this file for GPT-3.5.
 
-2 **Run The Benchmarking Script**:
+2. **Run The Benchmarking Script**:
    - Execute the benchmark_framework.py script, passing the path to your AI runner file as a command-line argument.
 
 ## Dependencies
