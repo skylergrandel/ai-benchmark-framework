@@ -24,8 +24,12 @@ def run_benchmark(benchmark, ai_module):
         # Construct the path to the test suite module
         test_suite_path = ".".join(["test_suites", benchmark['name'], problem['test_suite'][:-3]])
         
-        test_suite_module = importlib.import_module(test_suite_path)
-        points_earned, total_points = test_suite_module.test(solution)
+        try{
+            test_suite_module = importlib.import_module(test_suite_path)
+            points_earned, total_points = test_suite_module.test(solution)
+        }except{
+            print("Exception while testing")
+        }
 
         print(points_earned, "/", total_points)
         
