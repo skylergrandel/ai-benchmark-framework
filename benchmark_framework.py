@@ -37,7 +37,7 @@ def run_benchmark(benchmark, ai_module):
 
 def main():
     #ai_module = importlib.import_module(ai_filename[:-3])
-	ai_module = llm
+    ai_module = llm
     benchmarks = load_benchmarks('./benchmarks')
     
     for benchmark in benchmarks:
