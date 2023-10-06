@@ -19,7 +19,7 @@ def run_benchmark(benchmark, ai_module):
     
     for problem in benchmark['problems']:
         prompt = problem['prompt']
-        solution = llm.predict(code_prompt)
+        solution = llm.predict(prompt)
 
         # Construct the path to the test suite module
         test_suite_path = ".".join(["test_suites", benchmark['name'], problem['test_suite'][:-3]])
