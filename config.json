@@ -2,5 +2,5 @@
     "name": "code-reuse",
     "model": "openai-latest-1024",
     "run_test": "python3 benchmark_framework.py",
-    "tags": ["code-reuse", "python"],
+    "tags": ["code-reuse", "python"]
 }
