@@ -29,7 +29,7 @@ def run_benchmark(benchmark, ai_module):
             points_earned, total_points = test_suite_module.test(solution)
         except Exception as e:
             print("Exception while testing: ", e)
-			points_earned, total_points = 0,0
+            points_earned, total_points = 0,0
 
         print(points_earned, "/", total_points)
         
@@ -47,10 +47,10 @@ def main():
     for benchmark in benchmarks:
         score = run_benchmark(benchmark, ai_module)
         print(f"{benchmark['name']}: {score}%")
-	
-	output_data = {"output": score}
-	
-	with open('output.json', 'w') as f:
+
+    output_data = {"output": score}
+    
+    with open('output.json', 'w') as f:
         json.dump(output_data, f, indent=4)
 
 
