@@ -54,8 +54,6 @@ def main():
         json.dump(output_data, f, indent=4)
 
 
-main()
-"""
 if __name__ == "__main__":
-    main(sys.argv[1])
-"""
+    main()
+    #main(sys.argv[1])
