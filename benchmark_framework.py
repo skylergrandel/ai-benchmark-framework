@@ -20,13 +20,16 @@ def run_benchmark(benchmark, ai_module):
     for problem in benchmark['problems']:
         prompt = problem['prompt']
         solution = llm.predict(prompt)
+        
+        print(solution)
 
         # Construct the path to the test suite module
         test_suite_path = ".".join(["test_suites", benchmark['name'], problem['test_suite'][:-3]])
         
         try:
             test_suite_module = importlib.import_module(test_suite_path)
-            points_earned, total_points = test_suite_module.test(solution)
+            total_points += 1
+            points_earned = test_suite_module.test(solution)
         except Exception as e:
             print("Exception while testing: ", e)
             points_earned, total_points = 0,0
