@@ -1,22 +1,22 @@
-import unittest
-
 def test(code):
     exec(code, globals())
 
-    class TestTwoSumFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(sorted(two_sum([2, 7, 11, 15], 9)), [0, 1])  # 2 + 7 = 9
+    try:
+        # Test regular case
+        assert sorted(two_sum([2, 7, 11, 15], 9)) == [0, 1], "Regular case failed"
 
-        def test_case_with_negative_numbers(self):
-            self.assertEqual(sorted(two_sum([-1, -2, -3, -4, -5], -8)), [2, 4])  # -3 + -5 = -8
+        # Test case with negative numbers
+        assert sorted(two_sum([-1, -2, -3, -4, -5], -8)) == [2, 4], "Case with negative numbers failed"
 
-        def test_no_solution(self):
-            with self.assertRaises(ValueError):
-                two_sum([1, 2, 3], 6)
+        # Test case with no solution: This should raise a ValueError
+        try:
+            two_sum([1, 2, 3], 6)
+            assert False, "No solution case failed: Expected a ValueError"
+        except ValueError:
+            pass  # Expected exception
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestTwoSumFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
+    except AssertionError as e:
+        print(str(e))
+        return 0
 
-    return 1 if result.wasSuccessful() else 0
+    return 1

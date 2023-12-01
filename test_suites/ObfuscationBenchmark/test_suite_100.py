@@ -1,21 +1,27 @@
-import unittest
-
 def test(code):
+    # Execute the provided code
     exec(code, globals())
 
-    class TestSumWithNeighborsFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(sum_with_neighbors([1, 2, 3, 4]), [3, 6, 9, 7])
+    # Test cases
+    test_cases = [
+        ([1, 2, 3, 4], [3, 6, 9, 7]),
+        ([5], [5]),
+        ([], []),
+    ]
 
-        def test_single_element(self):
-            self.assertEqual(sum_with_neighbors([5]), [5])
+    # Function to run all test cases
+    def run_tests():
+        for input_list, expected_output in test_cases:
+            # Check if 'sum_with_neighbors' function exists
+            if 'sum_with_neighbors' not in globals():
+                return 0
 
-        def test_empty_list(self):
-            self.assertEqual(sum_with_neighbors([]), [])
+            # Run the function and compare the output with the expected output
+            result = globals()['sum_with_neighbors'](input_list)
+            if result != expected_output:
+                return 0
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestSumWithNeighborsFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
+        return 1
 
-    return 1 if result.wasSuccessful() else 0
+    # Run the tests and return the result
+    return run_tests()

@@ -1,21 +1,35 @@
-import unittest
+'''
+def sum_of_others(nums):
+    return [sum(nums) - num for num in nums]
+'''
 
-def test(code):
-    exec(code, globals())
+def test(solution_code):
+    # Define context where solution_code will be executed
+    local_context = {}
+    exec(solution_code, globals(), local_context)
+    # Retrieve the solution function from the local_context
+    sum_of_others_solution = local_context['sum_of_others']
 
-    class TestSumOfOthersFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(sum_of_others([1, 2, 3]), [5, 4, 3])  # 2+3, 1+3, 1+2
+    # Flag to track whether the tests passed
+    all_tests_passed = True
 
-        def test_single_element(self):
-            self.assertEqual(sum_of_others([7]), [0])
+    # Helper function to assert the equality
+    def assert_equal(actual, expected):
+        return actual == expected
 
-        def test_empty_list(self):
-            self.assertEqual(sum_of_others([]), [])
+    # Test cases
+    test_cases = [
+        ([1, 2, 3], [5, 4, 3]),
+        ([7], [0]),
+        ([], [])
+    ]
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestSumOfOthersFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
+    for input_data, expected_output in test_cases:
+        # Compare expected output to the output from sum_of_others_solution
+        if not assert_equal(sum_of_others_solution(input_data), expected_output):
+            all_tests_passed = False
+            print(f"Test failed: input {input_data} expected {expected_output} got {sum_of_others_solution(input_data)}")
+            break  # Exit early as one test failed
 
-    return 1 if result.wasSuccessful() else 0
+    # Return 1 if all tests passed, 0 otherwise
+    return 1 if all_tests_passed else 0

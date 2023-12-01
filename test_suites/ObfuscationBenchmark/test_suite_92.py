@@ -1,21 +1,21 @@
-import unittest
-
 def test(code):
-    exec(code, globals())
+    try:
+        # Execute the provided code to define the most_frequent_word function.
+        exec(code, globals())
 
-    class TestMostFrequentWordFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(most_frequent_word('the cat chased the rat and the cat escaped'), 'the')
+        # Test cases for the function most_frequent_word.
+        assert most_frequent_word('the cat chased the rat and the cat escaped') == 'the', "Test failed: 'the cat chased the rat and the cat escaped'"
+        assert most_frequent_word('red blue green red blue') == 'red', "Test failed: 'red blue green red blue'"
+        assert most_frequent_word('hello') == 'hello', "Test failed: 'hello'"
 
-        def test_tie_case(self):
-            self.assertEqual(most_frequent_word('red blue green red blue'), 'red')
+        # If no assertion fails, return 1 to indicate success.
+        return 1
 
-        def test_single_word(self):
-            self.assertEqual(most_frequent_word('hello'), 'hello')
-
-    suite = unittest.TestSuite()
-    suite.addTest(TestMostFrequentWordFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    except AssertionError as error:
+        # If any assertion fails, print the error and return 0 to indicate failure.
+        print(error)
+        return 0
+    except Exception as e:
+        # If there's an exception with the provided code (e.g., syntax error), print it and return 0.
+        print(f"An error occurred: {e}")
+        return 0

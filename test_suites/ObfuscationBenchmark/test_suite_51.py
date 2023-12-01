@@ -1,20 +1,32 @@
-import unittest
+def word_break(s, dictionary):
+    # Placeholder for the solution to the word break problem
+    # The provided string argument 'code' should replace this function's body
+    pass
 
 def test(code):
-    exec(code, globals())
+    # Define the word_break function from the given code
+    global word_break
+    exec(code)
 
-    class TestWordBreakFunction(unittest.TestCase):
-        def test_can_segment(self):
-            dictionary = {'apple', 'pen', 'applepen', 'pine', 'pineapple'}
-            self.assertTrue(word_break('pineapplepenapple', dictionary))
+    try:
+        # Define the test cases
+        test_cases = [
+            ('pineapplepenapple', {'apple', 'pen', 'applepen', 'pine', 'pineapple'}, True),
+            ('catsandog', {'cats', 'dog', 'sand', 'and', 'cat'}, False),
+            # You can add more test cases as needed
+        ]
 
-        def test_cannot_segment(self):
-            dictionary = {'cats', 'dog', 'sand', 'and', 'cat'}
-            self.assertFalse(word_break('catsandog', dictionary))
+        # Run the test cases
+        for s, dictionary, expected in test_cases:
+            result = word_break(s, dictionary)
+            if result != expected:
+                # Test failed
+                return 0
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestWordBreakFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
+        # All tests passed
+        return 1
 
-    return 1 if result.wasSuccessful() else 0
+    except Exception as e:
+        # An exception occurred during testing
+        print(f"Testing raised an exception: {e}")
+        return 0

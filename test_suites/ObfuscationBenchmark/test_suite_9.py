@@ -1,21 +1,45 @@
-import unittest
-
 def test(code):
-    exec(code, globals())
+    # First, ensure the provided solution can be executed
+    try:
+        exec(code, globals())
+    except Exception as e:
+        print(f"The code cannot be executed due to an error: {e}")
+        return 0
 
-    class TestAreAnagramsFunction(unittest.TestCase):
-        def test_anagrams(self):
-            self.assertTrue(are_anagrams('listen', 'silent'))
+    # Check if are_anagrams is defined and callable
+    if 'are_anagrams' not in globals() or not callable(are_anagrams):
+        print("The function are_anagrams is not defined or is not callable.")
+        return 0
 
-        def test_not_anagrams(self):
-            self.assertFalse(are_anagrams('hello', 'world'))
+    # Test cases
+    tests = [
+        ('listen', 'silent', True),
+        ('hello', 'world', False),
+        ('abc', 'abcd', False),
+        ('aabbcc', 'bbaacc', True),
+        ('123', '321', True),
+        ('', '', True),
+        ('same', 'same', False),
+    ]
 
-        def test_different_lengths(self):
-            self.assertFalse(are_anagrams('abc', 'abcd'))
+    passed = True
+    for str1, str2, expected in tests:
+        try:
+            result = are_anagrams(str1, str2)
+            assert result is expected, f"are_anagrams({str1}, {str2}) should be {expected}, got {result} instead."
+        except AssertionError as ae:
+            print(f"Test failed: {ae}")
+            passed = False
+        except Exception as e:
+            print(f"An error occurred while executing are_anagrams({str1}, {str2}): {e}")
+            passed = False
+    
+    return 1 if passed else 0
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestAreAnagramsFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+# Example:
+# To use this test function, you'd pass the solution code as a string:
+# solution_code = """
+# def are_anagrams(str1, str2):
+#     # Your implementation here
+# """
+# print(test(solution_code))

@@ -1,21 +1,31 @@
-import unittest
-
 def test(code):
-    exec(code, globals())
+    # define the globals dictionary to hold the 'reverse_strings' function after exec
+    globals_dict = {}
 
-    class TestReverseStringsFunction(unittest.TestCase):
-        def test_regular_strings(self):
-            self.assertEqual(reverse_strings(['abc', 'def', 'ghi']), ['cba', 'fed', 'ihg'])
+    # execute the provided code string in the globals dictionary
+    exec(code, globals_dict)
 
-        def test_empty_string(self):
-            self.assertEqual(reverse_strings(['', 'abc']), ['', 'cba'])
+    # extract the 'reverse_strings' function from the globals dictionary
+    reverse_strings = globals_dict.get('reverse_strings', None)
 
-        def test_single_character_strings(self):
-            self.assertEqual(reverse_strings(['a', 'b', 'c']), ['a', 'b', 'c'])
+    # check if the function is defined
+    if not callable(reverse_strings):
+        return 0
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestReverseStringsFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
+    # initialize a list of test cases
+    test_cases = [
+        (['abc', 'def', 'ghi'], ['cba', 'fed', 'ihg']),
+        (['', 'abc'], ['', 'cba']),
+        (['a', 'b', 'c'], ['a', 'b', 'c']),
+    ]
 
-    return 1 if result.wasSuccessful() else 0
+    # check each test case
+    try:
+        for test_input, expected_output in test_cases:
+            if reverse_strings(test_input) != expected_output:
+                return 0
+        # if all test cases pass
+        return 1
+    except Exception as e:
+        # any exception caused by calling the function indicates a test failure
+        return 0

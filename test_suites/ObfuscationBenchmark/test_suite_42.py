@@ -1,21 +1,20 @@
-import unittest
+def test(solution_code):
+    # Define a function within this scope to execute the passed code
+    def custom_sort(nums):
+        exec(solution_code)
+        return locals()['custom_sort'](nums)
 
-def test(code):
-    exec(code, globals())
+    # Define the test cases
+    test_cases = [
+        ([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5], [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]),
+        ([], []),
+        ([7], [7])
+    ]
 
-    class TestCustomSortFunction(unittest.TestCase):
-        def test_regular_list(self):
-            self.assertEqual(custom_sort([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]), [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9])
+    # Run test cases
+    for input_list, expected in test_cases:
+        if custom_sort(input_list) != expected:
+            return 0
 
-        def test_empty_list(self):
-            self.assertEqual(custom_sort([]), [])
-
-        def test_single_element(self):
-            self.assertEqual(custom_sort([7]), [7])
-
-    suite = unittest.TestSuite()
-    suite.addTest(TestCustomSortFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    # If all tests passed
+    return 1

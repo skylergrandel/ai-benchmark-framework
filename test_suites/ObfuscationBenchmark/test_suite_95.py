@@ -1,21 +1,29 @@
-import unittest
 
-def test(code):
-    exec(code, globals())
+def multiply_binary(a, b):  # Placeholder for the actual implementation
+    pass
 
-    class TestMultiplyBinaryFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(multiply_binary('1010', '1011'), '1101110')
 
-        def test_single_digit(self):
-            self.assertEqual(multiply_binary('1', '0'), '0')
+def test(solution_code):
+    # Execute the solution code to define the multiply_binary function in the current scope
+    exec(solution_code, globals())
 
-        def test_different_lengths(self):
-            self.assertEqual(multiply_binary('11', '1'), '11')
+    # Define the tests
+    tests = [
+        ('1010', '1011', '1101110'),
+        ('1', '0', '0'),
+        ('11', '1', '11')
+    ]
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestMultiplyBinaryFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
+    # Run the tests
+    for a, b, expected in tests:
+        try:
+            result = multiply_binary(a, b)
+            if result != expected:
+                print(f"Test case multiply_binary({a}, {b}) failed: Expected {expected}, got {result}")
+                return 0
+        except Exception as e:
+            print(f"An exception occurred during testing: {e}")
+            return 0
 
-    return 1 if result.wasSuccessful() else 0
+    # If all tests pass, return 1
+    return 1

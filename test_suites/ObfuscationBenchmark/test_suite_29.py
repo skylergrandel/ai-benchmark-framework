@@ -1,23 +1,30 @@
-import unittest
-
 def test(code):
-    exec(code, globals())
+    # Define a local dictionary to hold local variables after exec
+    local_vars = {}
+    exec(code, globals(), local_vars)
+    
+    # Retrieve the look_and_say function from the local_vars
+    look_and_say = local_vars.get('look_and_say')
+    if not callable(look_and_say):
+        print("The provided code does not define a function named look_and_say.")
+        return 0
 
-    class TestLookAndSayFunction(unittest.TestCase):
-        def test_initial_numbers(self):
-            self.assertEqual(look_and_say(1), '1')
-            self.assertEqual(look_and_say(2), '11')
-            self.assertEqual(look_and_say(3), '21')
-            self.assertEqual(look_and_say(4), '1211')
-            self.assertEqual(look_and_say(5), '111221')
-
-        def test_higher_number(self):
-            # Testing for a higher number in the sequence for correctness
-            self.assertEqual(look_and_say(6), '312211')
-
-    suite = unittest.TestSuite()
-    suite.addTest(TestLookAndSayFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    # Define the tests, a list of tuples (input, expected_output)
+    tests = [
+        (1, '1'),
+        (2, '11'),
+        (3, '21'),
+        (4, '1211'),
+        (5, '111221'),
+        (6, '312211'),
+    ]
+    
+    # Iterate through tests, checking if look_and_say function works as expected
+    for n, expected in tests:
+        output = look_and_say(n)
+        if output != expected:
+            print(f"Test failed for look_and_say({n}): Expected {expected}, got {output}")
+            return 0
+    
+    print("All tests passed.")
+    return 1

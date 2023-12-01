@@ -1,23 +1,28 @@
-import unittest
+def letter_combinations(digits):
+    # The solution to the given problem should be replaced here.
+    pass
 
 def test(code):
-    exec(code, globals())
+    # Dictionary that maps the function name to the actual function for use in exec()
+    local_scope = {}
+    exec(code, globals(), local_scope)
+    letter_combinations = local_scope['letter_combinations']
 
-    class TestLetterCombinationsFunction(unittest.TestCase):
-        def test_regular_case(self):
-            expected = ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf']
-            self.assertEqual(sorted(letter_combinations('23')), sorted(expected))
-
-        def test_empty_string(self):
-            self.assertEqual(letter_combinations(''), [])
-
-        def test_single_digit(self):
-            expected = ['w', 'x', 'y', 'z']
-            self.assertEqual(sorted(letter_combinations('9')), sorted(expected))
-
-    suite = unittest.TestSuite()
-    suite.addTest(TestLetterCombinationsFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    # Test cases
+    test_cases = [
+        ("23", sorted(['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf'])),
+        ("", []),
+        ("9", sorted(['w', 'x', 'y', 'z'])),
+    ]
+    
+    # Testing loop
+    for digits, expected in test_cases:
+        try:
+            result = sorted(letter_combinations(digits))
+            assert result == expected, f"Failed test with input {digits}. Expected: {expected}, got: {result}"
+        except AssertionError as e:
+            print(e)
+            return 0
+    
+    # If all tests pass
+    return 1

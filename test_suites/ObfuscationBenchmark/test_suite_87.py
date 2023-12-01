@@ -1,24 +1,31 @@
-import unittest
-
 def test(code):
-    exec(code, globals())
+    # Define the local scope for executing the code
+    local_scope = {}
+    exec(code, globals(), local_scope)
 
-    class TestThreeSumZeroFunction(unittest.TestCase):
-        def test_regular_case(self):
-            nums = [-1, 0, 1, 2, -1, -4]
-            expected = [[-1, -1, 2], [-1, 0, 1]]
+    # Retrieve the function from the local scope
+    three_sum_zero = local_scope.get('three_sum_zero')
+
+    # Helper function to compare results
+    def are_results_same(actual, expected):
+        return sorted(map(sorted, actual)) == sorted(map(sorted, expected))
+
+    # All test cases to be executed
+    test_cases = [
+        ([-1, 0, 1, 2, -1, -4], [[-1, -1, 2], [-1, 0, 1]]),
+        ([1, 2, 3], []),
+        ([], []),
+    ]
+
+    # Run test cases
+    for nums, expected in test_cases:
+        try:
             result = three_sum_zero(nums)
-            self.assertEqual(sorted(map(sorted, result)), sorted(map(sorted, expected)))
+            if not are_results_same(result, expected):
+                print(f"Test failed: Input {nums} expected {expected} but got {result}")
+                return 0  # Test failed
+        except Exception as e:
+            print(f"An exception occurred during testing: {e}")
+            return 0  # Test failed due to exception
 
-        def test_no_solution(self):
-            self.assertEqual(three_sum_zero([1, 2, 3]), [])
-
-        def test_empty_list(self):
-            self.assertEqual(three_sum_zero([]), [])
-
-    suite = unittest.TestSuite()
-    suite.addTest(TestThreeSumZeroFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    return 1  # All tests passed

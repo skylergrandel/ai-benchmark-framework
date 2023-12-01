@@ -1,24 +1,24 @@
-import unittest
+def test(solution_code):
+    # Define a local scope to execute the solution in
+    local_scope = {}
+    exec(solution_code, globals(), local_scope)
+    longest_non_repeating_substring = local_scope['longest_non_repeating_substring']
 
-def test(code):
-    exec(code, globals())
+    # List of test cases: each tuple contains the input string and the expected output
+    test_cases = [
+        ('abcabcbb', 'abc'),
+        ('abcdef', 'abcdef'),
+        ('', ''),
+        ('bbbbb', 'b'),
+        # Add more test cases if necessary
+    ]
 
-    class TestLongestNonRepeatingSubstringFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(longest_non_repeating_substring('abcabcbb'), 'abc')
+    # Iterating through the test cases and applying the function
+    for test_input, expected_output in test_cases:
+        actual_output = longest_non_repeating_substring(test_input)
+        if actual_output != expected_output:
+            # If any test fails, return 0
+            return 0
 
-        def test_no_repetition(self):
-            self.assertEqual(longest_non_repeating_substring('abcdef'), 'abcdef')
-
-        def test_empty_string(self):
-            self.assertEqual(longest_non_repeating_substring(''), '')
-
-        def test_repeating_characters(self):
-            self.assertEqual(longest_non_repeating_substring('bbbbb'), 'b')
-
-    suite = unittest.TestSuite()
-    suite.addTest(TestLongestNonRepeatingSubstringFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    # If all tests pass, return 1
+    return 1

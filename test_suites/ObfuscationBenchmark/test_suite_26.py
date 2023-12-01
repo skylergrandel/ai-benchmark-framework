@@ -1,21 +1,20 @@
-import unittest
-
 def test(code):
+    # Define the function based on the provided code
     exec(code, globals())
 
-    class TestIsValidPalindromeFunction(unittest.TestCase):
-        def test_valid_palindrome(self):
-            self.assertTrue(is_valid_palindrome('A man, a plan, a canal: Panama'))
+    # Define the individual tests
+    def test_valid_palindrome():
+        return is_valid_palindrome('A man, a plan, a canal: Panama')
 
-        def test_invalid_palindrome(self):
-            self.assertFalse(is_valid_palindrome('race a car'))
+    def test_invalid_palindrome():
+        return not is_valid_palindrome('race a car')
 
-        def test_empty_string(self):
-            self.assertTrue(is_valid_palindrome(''))
+    def test_empty_string():
+        return is_valid_palindrome('')
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestIsValidPalindromeFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
+    # Run the tests and accumulate the results
+    tests_passed = test_valid_palindrome() and test_invalid_palindrome() and test_empty_string()
 
-    return 1 if result.wasSuccessful() else 0
+    # Return 1 if all tests passed, 0 otherwise
+    return 1 if tests_passed else 0
+

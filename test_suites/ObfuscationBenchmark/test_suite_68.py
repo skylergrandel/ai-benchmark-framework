@@ -1,21 +1,25 @@
-import unittest
-
 def test(code):
+    # Execute the code to define the max_sum_non_adjacent function
     exec(code, globals())
 
-    class TestMaxSumNonAdjacentFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(max_sum_non_adjacent([3, 2, 7, 10]), 13)  # Choose 3 and 10
+    # Helper function to run an individual test case
+    def run_test_case(test_input, expected_result):
+        try:
+            result = max_sum_non_adjacent(test_input)
+            return result == expected_result
+        except:
+            # If there is an exception, the test case fails
+            return False
 
-        def test_all_negative(self):
-            self.assertEqual(max_sum_non_adjacent([-1, -2, -3]), -1)
+    # Set up test cases
+    test_cases = [
+        ([3, 2, 7, 10], 13),
+        ([-1, -2, -3], -1),
+        ([], 0),
+    ]
 
-        def test_empty_list(self):
-            self.assertEqual(max_sum_non_adjacent([]), 0)
+    # Run tests
+    all_tests_passed = all(run_test_case(test_input, expected_result) for test_input, expected_result in test_cases)
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestMaxSumNonAdjacentFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    # Return 1 if all tests passed, 0 otherwise
+    return 1 if all_tests_passed else 0

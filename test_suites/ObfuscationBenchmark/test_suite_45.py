@@ -1,21 +1,29 @@
-import unittest
-
 def test(code):
-    exec(code, globals())
+    try:
+        # Setup the execution environment for provided code
+        local_vars = {}
+        exec(code, globals(), local_vars)
+        odd_occurrences = local_vars['odd_occurrences']
 
-    class TestOddOccurrencesFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(sorted(odd_occurrences([20, 15, 20, 16, 15, 15, 16])), [15, 15])
+        # Define test cases as tuples of input and expected output
+        test_cases = [
+            ([20, 15, 20, 16, 15, 15, 16], [15, 15]),
+            ([10, 10, 20, 20], []),
+            ([7], [7]),
+            # Add more test cases as needed
+        ]
 
-        def test_no_odd_occurrences(self):
-            self.assertEqual(odd_occurrences([10, 10, 20, 20]), [])
+        # Iterate through the test cases and check if the results match the expected output
+        for input_list, expected_output in test_cases:
+            result = odd_occurrences(input_list)  # Call the function from the provided code
 
-        def test_single_element(self):
-            self.assertEqual(odd_occurrences([7]), [7])
+            # The solution might return elements in any order, so we should sort before comparison
+            if sorted(result) != sorted(expected_output):
+                return 0  # If any test case fails, return 0
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestOddOccurrencesFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
+        return 1  # If all test cases pass, return 1
 
-    return 1 if result.wasSuccessful() else 0
+    except Exception as e:
+        # If there's any error while evaluating the provided code or running the tests, return 0
+        print(f"An error occurred: {e}")
+        return 0

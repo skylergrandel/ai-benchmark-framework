@@ -1,23 +1,30 @@
-import unittest
-
 def test(code):
-    exec(code, globals())
+    exec(code)
 
-    class TestTwoSumIndicesFunction(unittest.TestCase):
-        def test_regular_case(self):
-            nums = [2, 7, 11, 15]
-            target = 9
-            self.assertEqual(sorted(two_sum_indices(nums, target)), [0, 1])  # nums[0] + nums[1] = 9
+    try:
+        # Define test cases
+        test_cases = [
+            (([2, 7, 11, 15], 9), [0, 1]),
+            (([1, 2, 3], 6), None),
+            (([1], 1), None),
+        ]
 
-        def test_no_solution(self):
-            self.assertIsNone(two_sum_indices([1, 2, 3], 6))
+        # Run test cases
+        for inputs, expected in test_cases:
+            nums, target = inputs
+            actual = two_sum_indices(nums, target)
+            if expected is not None:
+                # Check if the actual indices sorted matches the expected ones
+                if sorted(actual) != expected:
+                    return 0
+            else:
+                # Check if actual is None when expected is None
+                if actual is not None:
+                    return 0
 
-        def test_single_element(self):
-            self.assertIsNone(two_sum_indices([1], 1))
+    except Exception as e:
+        print(f"An error occurred during testing: {e}")
+        return 0
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestTwoSumIndicesFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    # If all tests pass
+    return 1

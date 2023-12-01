@@ -1,24 +1,34 @@
-import unittest
-
 def test(code):
-    exec(code, globals())
+    # Define the local namespace to execute the solution code
+    local_namespace = {}
+    
+    # Execute the solution code
+    exec(code, {}, local_namespace)
+    
+    # Retrieve the solution function
+    is_valid_number = local_namespace['is_valid_number']
+    
+    # Define the tests
+    def test_valid_number():
+        return (is_valid_number('10') and
+                is_valid_number('-10.5') and
+                is_valid_number('+5.5') and
+                is_valid_number('0'))
 
-    class TestIsValidNumberFunction(unittest.TestCase):
-        def test_valid_number(self):
-            self.assertTrue(is_valid_number('10'))
-            self.assertTrue(is_valid_number('-10.5'))
+    def test_invalid_number():
+        return (not is_valid_number('a10') and
+                not is_valid_number('10a') and
+                not is_valid_number('10..5') and
+                not is_valid_number('--10'))
 
-        def test_invalid_number(self):
-            self.assertFalse(is_valid_number('a10'))
-            self.assertFalse(is_valid_number('10a'))
+    def test_edge_cases():
+        return (not is_valid_number('') and
+                is_valid_number('0'))
 
-        def test_edge_cases(self):
-            self.assertFalse(is_valid_number(''))
-            self.assertTrue(is_valid_number('0'))
+    # Run the tests
+    all_tests_passed = (test_valid_number() and
+                        test_invalid_number() and
+                        test_edge_cases())
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestIsValidNumberFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    # Return the result
+    return 1 if all_tests_passed else 0

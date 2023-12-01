@@ -1,24 +1,28 @@
-import unittest
-
 def test(code):
+    # Execute the solution code to define is_valid_ipv4 function
     exec(code, globals())
 
-    class TestIsValidIPv4Function(unittest.TestCase):
-        def test_valid_ipv4(self):
-            self.assertTrue(is_valid_ipv4('192.168.1.1'))
-            self.assertTrue(is_valid_ipv4('255.255.255.255'))
+    try:
+        # List of test cases
+        test_cases = [
+            ('192.168.1.1', True),
+            ('255.255.255.255', True),
+            ('256.256.256.256', False),
+            ('192.168.1', False),
+            ('192.168.1.1.1', False),
+            ('', False)
+        ]
 
-        def test_invalid_ipv4(self):
-            self.assertFalse(is_valid_ipv4('256.256.256.256'))
-            self.assertFalse(is_valid_ipv4('192.168.1'))
-            self.assertFalse(is_valid_ipv4('192.168.1.1.1'))
+        # Run the tests
+        for ip_address, expected in test_cases:
+            result = is_valid_ipv4(ip_address)
+            assert result == expected, f"{ip_address}: expected {expected}, got {result}"
 
-        def test_empty_string(self):
-            self.assertFalse(is_valid_ipv4(''))
+    except AssertionError as e:
+        # If any assertion fails, print the error and return 0
+        print(f"Test failed: {e}")
+        return 0
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestIsValidIPv4Function())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    # If no exception was raised, all tests passed
+    print("All tests passed.")
+    return 1

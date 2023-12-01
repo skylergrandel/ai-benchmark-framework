@@ -1,21 +1,22 @@
-import unittest
+def first_non_repeating_char(s):
+    # User's function or code to be inserted here
+    pass  # Placeholder, replace with actual code to solve the problem
 
-def test(code):
-    exec(code, globals())
+def test_user_solution(user_solution):
+    # Define the first_non_repeating_char function based on the user_solution
+    exec(user_solution, globals())
 
-    class TestFirstNonRepeatingCharFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(first_non_repeating_char('swiss'), 'w')
+    # Define tests
+    tests = {
+        'swiss': 'w',
+        'aabbcc': None,
+        '': None,
+    }
 
-        def test_all_repeating(self):
-            self.assertIsNone(first_non_repeating_char('aabbcc'))
+    # Run tests
+    for input_str, expected_output in tests.items():
+        if first_non_repeating_char(input_str) != expected_output:
+            return 0  # Test failed
 
-        def test_empty_string(self):
-            self.assertIsNone(first_non_repeating_char(''))
-
-    suite = unittest.TestSuite()
-    suite.addTest(TestFirstNonRepeatingCharFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+    # If all tests passed return 1
+    return 1

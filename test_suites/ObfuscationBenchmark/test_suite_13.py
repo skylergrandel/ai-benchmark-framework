@@ -1,21 +1,23 @@
-import unittest
+def test(solution_code):
+    # First, define the filter_even_numbers function from the input string
+    local_vars = {}
+    exec(solution_code, globals(), local_vars)
+    filter_even_numbers = local_vars['filter_even_numbers']
 
-def test(code):
-    exec(code, globals())
+    # Define test cases as a list of tuples (input, expected_output)
+    test_cases = [
+        ([1, 2, 3, 4], [2, 4]),
+        ([2, 4, 6], [2, 4, 6]),
+        ([1, 3, 5], []),
+        ([], []),
+        ([0, -2, -3, -4], [0, -2, -4]),
+    ]
 
-    class TestFilterEvenNumbersFunction(unittest.TestCase):
-        def test_mixed_list(self):
-            self.assertEqual(filter_even_numbers([1, 2, 3, 4]), [2, 4])
+    # Run test cases
+    for input_list, expected_output in test_cases:
+        result = filter_even_numbers(input_list)
+        if result != expected_output:
+            return 0  # Test failed
 
-        def test_all_even(self):
-            self.assertEqual(filter_even_numbers([2, 4, 6]), [2, 4, 6])
+    return 1  # All tests passed
 
-        def test_no_even(self):
-            self.assertEqual(filter_even_numbers([1, 3, 5]), [])
-
-    suite = unittest.TestSuite()
-    suite.addTest(TestFilterEvenNumbersFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0

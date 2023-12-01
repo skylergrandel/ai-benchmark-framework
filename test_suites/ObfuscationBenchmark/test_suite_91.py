@@ -1,21 +1,39 @@
-import unittest
-
 def test(code):
-    exec(code, globals())
+    # Define the test cases and expected outcomes
+    test_cases = [
+        ([2, 7, 1, 8, 2, 8, 1], 1),  # Sum between the first two '8's
+        ([5, 2, 4, 3, 1], 9),  # Sum between '5's
+        ([10, 1, 10], 0),  # No elements between
+    ]
+    
+    # Execute the provided code
+    local_vars = {}
+    exec(code, globals(), local_vars)
+    sum_between_largest = local_vars.get('sum_between_largest')
 
-    class TestSumBetweenLargestFunction(unittest.TestCase):
-        def test_regular_case(self):
-            self.assertEqual(sum_between_largest([2, 7, 1, 8, 2, 8, 1]), 1)  # Sum between the first two '8's
+    # If the function is not defined, return 0
+    if not sum_between_largest:
+        return 0
 
-        def test_single_occurrence_of_max(self):
-            self.assertEqual(sum_between_largest([5, 2, 4, 3, 1]), 9)  # Sum between '5's
+    # Run the test cases
+    passed = True
+    for nums, expected in test_cases:
+        try:
+            result = sum_between_largest(nums)
+            if result != expected:
+                print(f"Test failed for input {nums}: Expected {expected}, got {result}")
+                passed = False
+        except Exception as e:
+            print(f"An error occurred while testing input {nums}: {e}")
+            passed = False
+    
+    # Return 1 if all tests passed, 0 otherwise
+    return 1 if passed else 0
 
-        def test_no_elements_between(self):
-            self.assertEqual(sum_between_largest([10, 1, 10]), 0)
-
-    suite = unittest.TestSuite()
-    suite.addTest(TestSumBetweenLargestFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
-
-    return 1 if result.wasSuccessful() else 0
+# Example usage:
+# solution_code = """
+# def sum_between_largest(nums):
+#     # Your solution here
+# """
+# test_result = test(solution_code)
+# print(f"Test suite passed? {'Yes' if test_result else 'No'}")

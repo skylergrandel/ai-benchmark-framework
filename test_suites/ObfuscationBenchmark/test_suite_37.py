@@ -1,23 +1,33 @@
-import unittest
-
 def test(code):
+    # Execute the code string provided in the current global context.
     exec(code, globals())
 
-    class TestValidParenthesesFunction(unittest.TestCase):
-        def test_valid_parentheses(self):
-            self.assertTrue(valid_parentheses('()'))
-            self.assertTrue(valid_parentheses('()[]{}'))
+    # Checks if the parentheses are valid or not using the solution provided.
+    def check_valid_parentheses():
+        try:
+            # Test cases with expected outcomes
+            test_cases = [
+                ('()', True),
+                ('()[]{}', True),
+                ('(]', False),
+                ('([)]', False),
+                ('', True)
+            ]
 
-        def test_invalid_parentheses(self):
-            self.assertFalse(valid_parentheses('(]'))
-            self.assertFalse(valid_parentheses('([)]'))
+            # Go through each test case and assert the result
+            for s, expected in test_cases:
+                result = valid_parentheses(s)
+                if result != expected:
+                    # If any test fails, return 0
+                    return 0
 
-        def test_empty_string(self):
-            self.assertTrue(valid_parentheses(''))
+            # If all tests pass, return 1
+            return 1
 
-    suite = unittest.TestSuite()
-    suite.addTest(TestValidParenthesesFunction())
-    runner = unittest.TextTestRunner()
-    result = runner.run(suite)
+        except Exception as e:
+            # If there's an error running the test, print the error and return 0
+            print(f"An error occurred: {e}")
+            return 0
 
-    return 1 if result.wasSuccessful() else 0
+    # Run the test for valid_parentheses
+    return check_valid_parentheses()
