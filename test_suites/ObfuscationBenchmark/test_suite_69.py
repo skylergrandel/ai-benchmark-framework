@@ -2,7 +2,7 @@ def longest_palindrome_by_deletion(s):
     # The solution code for longest_palindrome_by_deletion function should be here
     pass  # Placeholder to be replaced with the actual solution code
 
-def test_solution(solution_code):
+def test(solution_code):
     global longest_palindrome_by_deletion
     exec(solution_code)
 
