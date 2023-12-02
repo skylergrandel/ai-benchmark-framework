@@ -1,7 +1,9 @@
 # AI Benchmarking Framework
 
 ## Overview
-This framework is designed to benchmark generative AI models on a variety of tasks. It facilitates easy integration of new benchmarks and subject AIs for a standardized evaluation.
+This benchmark is designed to test an AI's ability to solve LeetCode style coding problems before and after obfuscation. This version (in the obfuscated branch) contains the code after obfuscation, where the `obfuscation` branch contains the code before obfuscation. Running test framework with both branches in your `.repos` file will test both. The problems in this repo have been obfuscated using this prompt with GPT-4 on the problems in the `obfuscation` branch:
+
+Below is a series of coding problems. I would like to ensure that someone attempting to solve these coding problems cannot simply use an AI to solve the problem for them. However, I don't want to change the solution to the problem. For each coding problem, obfuscate the problem so that it is more difficult for a Large Language Model to solve for a user.
 
 ## Structure
 The repository is structured as follows:
@@ -23,30 +25,9 @@ The repository is structured as follows:
 
 ## How to Run The Script
 1. Ensure you have all the necessary dependencies installed (see [Dependencies](#dependencies) section).
-2. Replace the `api_key` in `run_func.py` with your actual OpenAI API key.
+2. Set your OPENAI_API_KEY environment variable appropriately.
 3. Run the following command to benchmark GPT-3.5 using the provided `run()` function:
-`python benchmark_framework.py run_func.py`
-
-## Adding Your Own Benchmarks
-
-1. **Create Benchmark JSON**:
-   - Create a new JSON file following the existing format in the `benchmarks` directory.
-   - Each benchmark file should contain a benchmark name and a list of problems, with each problem defining a prompt for the AI model and a corresponding test suite for evaluating the generated solution.
-   - See the example benchmark JSON for the expected format.
-
-2. **Create Test Suites**:
-   - For each problem in your benchmark, create a Python file containing the test suite.
-   - Place your test suite files in a new subdirectory under the `test_suites` directory. The name of the subdirectory should match the "name" field defined in your benchmark's JSON file.
-   - Your test suites should calculate a quantitative result, returning the points earned and the points possible.
-   - For more qualitative results, you could make a call to the GPT-4 API for inspection and you could output intermediate results separately if that is necessary for your benchmark.
-
-## Testing a New AI with This Framework
-1. **Create AI Runner File**:
-   - Create a new Python file defining a run() function. This function should take the problem prompt as input and return the generated solution.
-   - You can look at run_func.py as an example of how to structure this file for GPT-3.5.
-
-2. **Run The Benchmarking Script**:
-   - Execute the benchmark_framework.py script, passing the path to your AI runner file as a command-line argument.
+`python benchmark_framework.py`
 
 ## Dependencies
 - Python 3.7 or later.
