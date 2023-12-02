@@ -1,5 +1,5 @@
 {
-    "name": "obfuscation",
+    "name": "obfuscated",
     "model": "openai-latest-1024",
     "run_test": "python3 benchmark_framework.py",
     "tags": ["obfuscation", "python"]
