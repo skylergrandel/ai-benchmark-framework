@@ -1,0 +1,505 @@
+{
+  "name": "ObfuscationBenchmark",
+  "problems": [
+    {
+        "identifier": "Problem1",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python routine designated for processing a collection of whole numbers. This routine's core functionality involves transforming each constituent number in the collection. The transformation follows a specific mathematical operation, namely multiplying a number by itself. Ensure this routine can accommodate collections of arbitrary lengths.\n\nPrototype: def square_list(numbers):",
+        "test_suite": "test_suite_1.py"
+    },
+    {
+        "identifier": "Problem2",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python method that scrutinizes a sequence of alphabetic characters. This method's primary objective is to compute and return the total occurrences of a specific subset of alphabetic characters, known for their role in phonetics as voiced sounds. The method should disregard the character casing in the sequence.\n\nPrototype: def count_vowels(s):",
+        "test_suite": "test_suite_2.py"
+    },
+    {
+        "identifier": "Problem3",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python procedure that evaluates a sequence of characters for a particular symmetric property. This property is characterized by the sequence's ability to be read identically from either direction. The procedure should return a confirmation if the sequence holds this property.\n\nPrototype: def is_palindrome(word):",
+        "test_suite": "test_suite_3.py"
+    },
+    {
+        "identifier": "Problem4",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nFormulate a Python algorithm capable of integrating two sequences, each arranged in a non-decreasing order. The resultant sequence should preserve this order, effectively combining the elements of the original sequences while maintaining the non-decreasing arrangement.\n\nPrototype: def merge_sorted_lists(list1, list2):",
+        "test_suite": "test_suite_4.py"
+    },
+    {
+        "identifier": "Problem5",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python function tasked with sifting through a collection of whole numbers. Its purpose is to identify and return the number that ranks second in magnitude when the collection is arranged in order of size. It is given that the collection contains a minimum of two distinct numbers.\n\nPrototype: def second_largest(numbers):",
+        "test_suite": "test_suite_5.py"
+    },
+    {
+        "identifier": "Problem6",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevise a Python converter that interprets a string of characters representing an ancient numerical system. This system employs specific letter combinations to denote numbers. The converter should accurately translate these character combinations into their corresponding numeric form, under the assumption that the input string is a valid representation within this system and does not exceed a certain numeric threshold.\n\nPrototype: def roman_to_int(s):",
+        "test_suite": "test_suite_6.py"
+    },
+    {
+        "identifier": "Problem7",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python evaluator that takes a whole number and determines its divisibility attributes. Specifically, the evaluator should ascertain whether the number is divisible solely by itself and one, thus qualifying it as a prime number according to mathematical definitions. The output should be a confirmation of whether this attribute holds true for the given number.\n\nPrototype: def is_prime(number):",
+        "test_suite": "test_suite_7.py"
+    },
+    {
+        "identifier": "Problem8",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python mechanism that, when presented with an array of numeric elements, performs an operation to alter the sequence of these elements. The desired outcome is to have the array presented in a manner opposite to its initial arrangement, with the last element becoming the first and so forth. The function should be versatile enough to handle arrays of varying sizes.\n\nPrototype: def reverse_list(numbers):",
+        "test_suite": "test_suite_8.py"
+    },
+    {
+        "identifier": "Problem9",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python procedure that evaluates two sets of alphabetic characters. This procedure's purpose is to determine whether these sets, despite potentially differing in their initial arrangement, possess an identical collection of characters. A positive evaluation occurs when both sets can be rearranged to match each other exactly.\n\nPrototype: def are_anagrams(str1, str2):",
+        "test_suite": "test_suite_9.py"
+    },
+    {
+        "identifier": "Problem10",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function capable of computing a specific element in a numerically progressive series, characterized by each element being the sum of its two immediate predecessors. The series initiates with two predefined numbers. The function should calculate and return the element corresponding to a given position in this sequence.\n\nPrototype: def fibonacci(n):",
+        "test_suite": "test_suite_10.py"
+    },
+    {
+        "identifier": "Problem11",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nFormulate a Python algorithm that interprets a string representing a number in binary format (consisting of 0s and 1s) and converts it into its decimal form. The input string is guaranteed to represent a non-negative integer in binary notation.\n\nPrototype: def binary_to_decimal(binary_str):",
+        "test_suite": "test_suite_11.py"
+    },
+    {
+        "identifier": "Problem12",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevise a Python method to determine the largest positive integer that divides two given non-negative integers without leaving a remainder. This method should efficiently calculate and return this divisor, known in mathematical terminology as the 'greatest common divisor'.\n\nPrototype: def gcd(a, b):",
+        "test_suite": "test_suite_12.py"
+    },
+    {
+        "identifier": "Problem13",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python function that scrutinizes a list of integers, isolating and returning a new list composed exclusively of those integers that adhere to a specific divisibility criterion - namely, being divisible by two. This new list should only contain the elements from the original list that meet this criterion.\n\nPrototype: def filter_even_numbers(numbers):",
+        "test_suite": "test_suite_13.py"
+    },
+    {
+        "identifier": "Problem14",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python routine that processes a collection of numerical values. Its primary function is to aggregate these values, culminating in a singular sum total. The procedure should adeptly handle collections of varying sizes, ensuring the sum encompasses every individual number within the collection.\n\nPrototype: def sum_of_list(numbers):",
+        "test_suite": "test_suite_14.py"
+    },
+    {
+        "identifier": "Problem15",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python function that examines a sequence of character strings. This function's objective is to invert the order of characters in each string. The output should be a new list where each string from the original list is presented in reverse order, maintaining the original list's sequence of strings.\n\nPrototype: def reverse_strings(strings):",
+        "test_suite": "test_suite_15.py"
+    },
+    {
+        "identifier": "Problem16",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python method that takes a whole number and transforms it into a string representing its binary equivalent. This binary representation consists of a sequence of digits, each being either '0' or '1', which collectively express the original number in the binary numeral system.\n\nPrototype: def int_to_binary(number):",
+        "test_suite": "test_suite_16.py"
+    },
+    {
+        "identifier": "Problem17",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nFormulate a Python algorithm that computes the cumulative sum of numbers that meet a specific divisibility criterion within a defined range. This range is inclusive, and the criterion for inclusion in the sum is that a number must be divisible by two, identifying it as an even number.\n\nPrototype: def sum_even_in_range(start, end):",
+        "test_suite": "test_suite_17.py"
+    },
+    {
+        "identifier": "Problem18",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevise a Python function that evaluates whether a given non-negative integer possesses a particular square property. Specifically, the function should determine if the number is a perfect square, meaning it can be expressed as the square of another integer.\n\nPrototype: def is_perfect_square(number):",
+        "test_suite": "test_suite_18.py"
+    },
+    {
+        "identifier": "Problem19",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python mechanism to sift through a list of integers and identify the largest product achievable by multiplying any three distinct numbers from this list. The function should efficiently navigate through all possible combinations of three numbers to find the combination yielding the highest product value.\n\nPrototype: def max_triplet_product(numbers):",
+        "test_suite": "test_suite_19.py"
+    },
+    {
+        "identifier": "Problem20",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python function that processes a sequence of characters (a string) and modifies it by duplicating each character. The outcome should be a new string where each character from the original string appears consecutively twice.\n\nPrototype: def repeat_characters(s):",
+        "test_suite": "test_suite_20.py"
+    },
+    {
+        "identifier": "Problem21",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python method capable of identifying numbers within a specified range that meet a unique mathematical criterion – being divisible only by one and themselves. The method should accept two integers defining the range (inclusive) and return a list of numbers within this range that satisfy the criterion.\n\nPrototype: def list_primes(start, end):",
+        "test_suite": "test_suite_21.py"
+    },
+    {
+        "identifier": "Problem22",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python routine to evaluate a collection of numerical values. This routine's task is to calculate the arithmetic mean of these values, effectively representing the average of the numbers in the collection.\n\nPrototype: def average_of_list(numbers):",
+        "test_suite": "test_suite_22.py"
+    },
+    {
+        "identifier": "Problem23",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python algorithm that scrutinizes a string of characters to identify the longest contiguous sequence of characters without any repetition. The function should return this sequence as a new string.\n\nPrototype: def longest_non_repeating_substring(s):",
+        "test_suite": "test_suite_23.py"
+    },
+    {
+        "identifier": "Problem24",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that generates a sequence where each element is the sum of the two preceding ones, starting from 0 and 1. The function should be able to produce the first n elements of this sequence, where n is a provided integer.\n\nPrototype: def first_n_fibonacci(n):",
+        "test_suite": "test_suite_24.py"
+    },
+    {
+        "identifier": "Problem25",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nFormulate a Python procedure that determines the number of unique ways to ascend a staircase of n steps. The constraint is that at each step, the climb can be either one or two steps. The function should return the total count of distinct ways this can be achieved, with n being a positive integer input.\n\nPrototype: def climb_stairs(n):",
+        "test_suite": "test_suite_25.py"
+    },
+    {
+        "identifier": "Problem26",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevise a Python mechanism that examines a sequence of characters (a string) and determines whether it forms a palindrome under specific conditions. The evaluation should only consider alphanumeric characters, disregarding any others, and be insensitive to character casing. The output is a boolean value indicating the presence or absence of this symmetric property.\n\nPrototype: def is_valid_palindrome(s):",
+        "test_suite": "test_suite_26.py"
+    },
+    {
+        "identifier": "Problem27",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python function that processes a list of integers and, for each element, calculates the product of all other elements in the list. This calculation must be done without using division. The function should return a new list where each element is replaced by the calculated product.\n\nPrototype: def product_except_self(numbers):",
+        "test_suite": "test_suite_27.py"
+    },
+    {
+        "identifier": "Problem28",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python algorithm that takes an array of integers and a target sum value. Its objective is to identify and return the indices of two distinct numbers in the array that add up to the target sum. The constraints are such that one unique solution exists and an element cannot be used twice in the sum.\n\nPrototype: def two_sum(nums, target):",
+        "test_suite": "test_suite_28.py"
+    },
+    {
+        "identifier": "Problem29",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function capable of generating an element in the Look-and-Say sequence at a specified position. This sequence starts with 1, and each subsequent number is formed by describing the previous number in terms of its consecutive digit groups. The function should return the nth element in this sequence, where n is a non-negative integer.\n\nPrototype: def look_and_say(n):",
+        "test_suite": "test_suite_29.py"
+    },
+    {
+        "identifier": "Problem30",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python routine that takes a string and alters it by capitalizing the first letter of each word while ensuring the rest of the characters in each word are in lowercase. The output should be a new string reflecting these modifications, adhering to the capitalization rule for each word within the original string.\n\nPrototype: def capitalize_words(s):",
+        "test_suite": "test_suite_30.py"
+    },
+    {
+        "identifier": "Problem31",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python routine that analyzes a list of integers to identify the maximum length of a subsequence where elements are in strictly ascending order without any interruptions. The function should return the length of this longest increasing consecutive elements sequence.\n\nPrototype: def longest_consecutive_sequence(numbers):",
+        "test_suite": "test_suite_31.py"
+    },
+    {
+        "identifier": "Problem32",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python method that scrutinizes a non-empty string to determine the character that appears with the highest frequency. In instances where multiple characters share the highest frequency, the function should return the character that appears earliest in the string.\n\nPrototype: def most_frequent_character(s):",
+        "test_suite": "test_suite_32.py"
+    },
+    {
+        "identifier": "Problem33",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python function that processes a string representing a sentence and identifies the word with the greatest number of characters. If there are multiple words of the same maximum length, the function should return the first one encountered in the sentence.\n\nPrototype: def longest_word(sentence):",
+        "test_suite": "test_suite_33.py"
+    },
+    {
+        "identifier": "Problem34",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python algorithm that takes an array of integers and transforms it into a new array. In this new array, each element should be the sum of itself and all preceding elements in the original array. The function should return this newly constructed array with cumulative sums.\n\nPrototype: def running_sum(nums):",
+        "test_suite": "test_suite_34.py"
+    },
+    {
+        "identifier": "Problem35",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python routine that examines a string to check for the presence of duplicate characters. The function should return a boolean value, True if any character appears more than once in the string, and False if all characters are unique.\n\nPrototype: def has_duplicates(s):",
+        "test_suite": "test_suite_35.py"
+    },
+    {
+        "identifier": "Problem36",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python function that accepts a collection of integer values and applies a randomization algorithm. This algorithm should rearrange the integers into a new sequence, maintaining the original set of numbers but altering their order. The output should be a list of these integers in their newly randomized configuration.\n\nNote: You can assume that a function `randomize()` is available which takes a list and returns it in a randomized order.\n\nPrototype: def randomize_list(numbers):",
+        "test_suite": "test_suite_36.py"
+    },
+    {
+        "identifier": "Problem37",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that examines a string consisting solely of parentheses. The method's purpose is to assess whether the parentheses are properly paired and correctly ordered. It should return True if the arrangement is valid and False otherwise.\n\nPrototype: def valid_parentheses(s):",
+        "test_suite": "test_suite_37.py"
+    },
+    {
+        "identifier": "Problem38",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine that processes a string of alphabetic characters. For each character, the routine should find its immediate successor in the English alphabet, with 'z' wrapping back to 'a'. The function should produce and return a new string of these successor characters.\n\nPrototype: def shift_characters(s):",
+        "test_suite": "test_suite_38.py"
+    },
+    {
+        "identifier": "Problem39",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python algorithm that generates a sequence of prime numbers. Given an integer n, the algorithm should produce a list of the first n prime numbers, starting from the smallest prime number and continuing as per the mathematical definition of prime numbers.\n\nPrototype: def first_n_primes(n):",
+        "test_suite": "test_suite_39.py"
+    },
+    {
+        "identifier": "Problem40",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that evaluates a string to determine if it conforms to the standard format of an IPv4 address. This format includes four numerical segments (octets), each ranging from 0 to 255, separated by periods. The function should return a boolean value indicating whether the string is a valid IPv4 address based on these criteria.\n\nPrototype: def is_valid_ipv4(address):",
+        "test_suite": "test_suite_40.py"
+    },
+    {
+        "identifier": "Problem41",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that processes an array of integers, altering each element to be the greatest value found to its right in the array. The terminal element in the array should be substituted with -1. The function should output a new array reflecting these changes.\n\nPrototype: def replace_with_greatest_on_right(nums):",
+        "test_suite": "test_suite_41.py"
+    },
+    {
+        "identifier": "Problem42",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that reorganizes a list of integers into ascending order without utilizing the language's built-in sorting capabilities, like 'sort' or 'sorted'. The output should be a new list with the integers arranged from the smallest to the largest.\n\nPrototype: def custom_sort(nums):",
+        "test_suite": "test_suite_42.py"
+    },
+    {
+        "identifier": "Problem43",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine capable of generating all distinct combinations of valid parentheses pairs given an integer n. Each combination should consist of n pairs of parentheses arranged in a manner that maintains validity in terms of pairing and order.\n\nPrototype: def generate_parentheses(n):",
+        "test_suite": "test_suite_43.py"
+    },
+    {
+        "identifier": "Problem44",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that identifies the majority element within a list of numbers. The majority element is defined as the one occurring more than half of the time in the list. The function should return this element, under the assumption that such an element always exists in the provided list.\n\nPrototype: def majority_element(nums):",
+        "test_suite": "test_suite_44.py"
+    },
+    {
+        "identifier": "Problem45",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that scans a list of integers and extracts those elements that appear an odd number of times. The output should be a new list comprising only those integers from the original list that meet this frequency criterion.\n\nPrototype: def odd_occurrences(nums):",
+        "test_suite": "test_suite_45.py"
+    },
+    {
+        "identifier": "Problem46",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function designed to calculate a specific element in a sequence known as 'ugly numbers.' These numbers are defined by their prime factors, which are exclusively 2, 3, and 5. Given a non-negative integer n, the function should return the nth number in this sequence.\n\nPrototype: def nth_ugly_number(n):",
+        "test_suite": "test_suite_46.py"
+    },
+    {
+        "identifier": "Problem47",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python method that analyzes a string and determines the minimum number of characters that need to be added to it to transform it into a palindrome. The added characters can be inserted anywhere in the string to achieve the palindrome structure.\n\nPrototype: def min_chars_for_palindrome(s):",
+        "test_suite": "test_suite_47.py"
+    },
+    {
+        "identifier": "Problem48",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python algorithm that rearranges a list of integers, positioning all odd numbers ahead of all even numbers. The original relative order of the odd and even numbers should be preserved in the rearranged list.\n\nPrototype: def rearrange_odd_even(nums):",
+        "test_suite": "test_suite_48.py"
+    },
+    {
+        "identifier": "Problem49",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that processes an array of integers to identify the smallest positive integer that is not present in the array. The array may contain duplicate and negative numbers. The function should return this missing integer.\n\nPrototype: def first_missing_positive(nums):",
+        "test_suite": "test_suite_49.py"
+    },
+    {
+        "identifier": "Problem50",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python routine that generates a list of binary numbers with a specified number of digits. Given a non-negative integer n, the function should produce a list of all binary numbers that have exactly n digits, arranged in ascending order.\n\nPrototype: def binary_numbers(n):",
+        "test_suite": "test_suite_50.py"
+    },
+    {
+        "identifier": "Problem51",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that evaluates a non-empty string to ascertain whether it can be dissected into a sequence of substrings, each of which matches an entry in a provided set of valid words (the 'dictionary'). The function should return a boolean indicating the feasibility of such segmentation, considering only space-separated combinations.\n\nPrototype: def word_break(s, dictionary):",
+        "test_suite": "test_suite_51.py"
+    },
+    {
+        "identifier": "Problem52",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that calculates the total number of distinct Binary Search Tree (BST) structures possible with nodes numbered from 1 to a given integer n. Each structure must be unique and adhere to BST properties. The function should return this count.\n\nPrototype: def count_unique_bsts(n):",
+        "test_suite": "test_suite_52.py"
+    },
+    {
+        "identifier": "Problem53",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine that takes a list of integers and identifies the pair of distinct integers within this list that yield the maximum product when multiplied together. The function should return the value of this maximum product.\n\nPrototype: def max_product(nums):",
+        "test_suite": "test_suite_53.py"
+    },
+    {
+        "identifier": "Problem54",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that processes a string representing a time in 24-hour format (e.g., '23:15'). The function's goal is to determine the next closest time that can be formed using the same digits as the original time, with the condition that the new time must be within the following 24-hour period.\n\nPrototype: def next_closest_time(time):",
+        "test_suite": "test_suite_54.py"
+    },
+    {
+        "identifier": "Problem55",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that evaluates two strings, s1 and s2, and determines whether s2 is a rotation of s1. A string is considered a rotation of another if it can be obtained by shifting some characters from one end of the string to the other. The function should return True if s2 is a rotation of s1 and False otherwise.\n\nPrototype: def is_rotation(s1, s2):",
+        "test_suite": "test_suite_55.py"
+    },
+    {
+        "identifier": "Problem56",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that processes a list of integers and identifies all unique pairs within the list whose elements sum up to zero. The output should be a list of tuples, each tuple representing a pair of numbers from the input list that meet this criterion, ensuring no duplicate pairs are included.\n\nPrototype: def zero_sum_pairs(nums):",
+        "test_suite": "test_suite_56.py"
+    },
+    {
+        "identifier": "Problem57",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that examines an array of integers and determines the length of the longest subsequence within it, where the subsequence's elements are in strictly increasing order. A subsequence is a series of elements from the array in their original order but not necessarily contiguous. The function should return the length of this subsequence.\n\nPrototype: def length_of_lis(nums):",
+        "test_suite": "test_suite_57.py"
+    },
+    {
+        "identifier": "Problem58",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine that takes a string composed of digits ranging from 2 to 9 and generates all possible letter combinations represented by these digits, following the mapping similar to that found on telephone buttons. The function should return a list of these letter combinations.\n\nPrototype: def letter_combinations(digits):",
+        "test_suite": "test_suite_58.py"
+    },
+    {
+        "identifier": "Problem59",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that takes a positive integer n and repeatedly sums its digits until the result is a single digit. The function should return this single-digit sum.\n\nPrototype: def digital_root(n):",
+        "test_suite": "test_suite_59.py"
+    },
+    {
+        "identifier": "Problem60",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that processes a list of integers, replacing each element with the sum of all other elements in the list. The output should be a new list where each element reflects the sum of all original elements except itself.\n\nPrototype: def sum_of_others(nums):",
+        "test_suite": "test_suite_60.py"
+    },
+    {
+        "identifier": "Problem61",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that receives two strings representing binary numbers. The function's task is to calculate the sum of these binary numbers and return the result as a binary string. Both input strings are guaranteed to be non-empty and consist only of '1's and '0's.\n\nPrototype: def add_binary(a, b):",
+        "test_suite": "test_suite_61.py"
+    },
+    {
+        "identifier": "Problem62",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that takes an array of integers, possibly containing duplicates, and determines the length of the longest sequence of consecutive numbers present in the array. The function should return the length of this longest consecutive elements sequence.\n\nPrototype: def longest_consecutive(nums):",
+        "test_suite": "test_suite_62.py"
+    },
+    {
+        "identifier": "Problem63",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine that processes a list of numbers and identifies the smallest positive integer greater than 0 that is not present in the list. The function should return this missing integer.\n\nPrototype: def smallest_missing_positive(nums):",
+        "test_suite": "test_suite_63.py"
+    },
+    {
+        "identifier": "Problem64",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that transforms a string by replacing each vowel with the next vowel in a predetermined sequence ('a' -> 'e', 'e' -> 'i', etc.) and each consonant with the next consonant in the alphabetical order. The function should return this modified string.\n\nPrototype: def shift_characters_vowels_and_consonants(s):",
+        "test_suite": "test_suite_64.py"
+    },
+    {
+        "identifier": "Problem65",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that analyzes a string containing parentheses and calculates the length of the longest substring that forms a valid (well-formed) sequence of parentheses. The function should return the length of this substring.\n\nPrototype: def longest_valid_parentheses(s):",
+        "test_suite": "test_suite_65.py"
+    },
+    {
+        "identifier": "Problem66",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that interprets a list of non-negative integers as an elevation map, where each integer represents the height of a bar with a unit width. The function's objective is to calculate the total volume of water that could be trapped between these bars after a rainfall. The function should return this total trapped water volume.\n\nPrototype: def trap_rain_water(heights):",
+        "test_suite": "test_suite_66.py"
+    },
+    {
+        "identifier": "Problem67",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that receives two strings and computes the minimum number of operations required to transform one string into an anagram of the other. An operation can be the insertion, deletion, or replacement of a character. The function should return the count of these operations.\n\nPrototype: def min_steps_to_anagram(s1, s2):",
+        "test_suite": "test_suite_67.py"
+    },
+    {
+        "identifier": "Problem68",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine that processes a list of integers and determines the maximum sum achievable by adding together non-adjacent elements of the list. The function should return this maximum sum.\n\nPrototype: def max_sum_non_adjacent(nums):",
+        "test_suite": "test_suite_68.py"
+    },
+    {
+        "identifier": "Problem69",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that takes a string and calculates the longest palindrome that can be formed by selectively deleting characters from the string. If multiple palindromes of the same maximum length exist, the function should return the lexicographically earliest palindrome.\n\nPrototype: def longest_palindrome_by_deletion(s):",
+        "test_suite": "test_suite_69.py"
+    },
+    {
+        "identifier": "Problem70",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that examines a list of strings and identifies the string that appears most frequently. In the event of a tie, the function should return the string that appears first in the list. The function should output this most frequent string.\n\nPrototype: def most_frequent_string(strings):",
+        "test_suite": "test_suite_70.py"
+    },
+    {
+        "identifier": "Problem71",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that analyzes an array of integers and identifies the greatest difference between any two elements where the larger number appears after the smaller one in the array. The function should return this maximum difference value.\n\nPrototype: def max_difference(nums):",
+        "test_suite": "test_suite_71.py"
+    },
+    {
+        "identifier": "Problem72",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that processes a string and constructs a new string by omitting all vowels (‘a’, ‘e’, ‘i’, ‘o’, ‘u’) from the original string. The resultant string, devoid of these specific characters, should be the function's output.\n\nPrototype: def remove_vowels(s):",
+        "test_suite": "test_suite_72.py"
+    },
+    {
+        "identifier": "Problem73",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine that takes a string and calculates the length of the longest substring that contains no repeating characters. The function should return the length of this substring.\n\nPrototype: def longest_substring_without_repeating(s):",
+        "test_suite": "test_suite_73.py"
+    },
+    {
+        "identifier": "Problem74",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that takes an integer n and decomposes it into its constituent prime factors, returning a list of these factors. The function should produce a list containing all the prime factors of n.\n\nPrototype: def prime_factors(n):",
+        "test_suite": "test_suite_74.py"
+    },
+    {
+        "identifier": "Problem75",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that processes a list of integers and calculates the product of all numbers in the list except for the maximum number. In cases where the maximum number appears multiple times in the list, the function should include all instances of this maximum number in the product calculation. The function should return this product value.\n\nPrototype: def product_except_max(nums):",
+        "test_suite": "test_suite_75.py"
+    },
+    {
+        "identifier": "Problem76",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that receives a list of integers along with a target integer. The function's purpose is to search for a pair of integers within the list whose sum equals the target integer. It should return the indices of these two integers, or None if no such pair exists in the list.\n\nPrototype: def two_sum_indices(nums, target):",
+        "test_suite": "test_suite_76.py"
+    },
+    {
+        "identifier": "Problem77",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that examines a non-empty list of non-negative integers and identifies the third highest distinct number in the list. If the list does not contain a third unique maximum, the function should return the highest number in the list.\n\nPrototype: def third_max(nums):",
+        "test_suite": "test_suite_77.py"
+    },
+    {
+        "identifier": "Problem78",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine that processes a list of strings and a pattern string containing 'jokers' (represented by '?'), which can substitute for any character. The function should return all strings from the list that can be matched to the pattern, considering these jokers.\n\nPrototype: def match_pattern(strings, pattern):",
+        "test_suite": "test_suite_78.py"
+    },
+    {
+        "identifier": "Problem79",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that takes a list of integers and a target sum, then determines whether any three integers within the list can be summed to equal the target sum. The function should return a boolean indicating the presence or absence of such a triplet.\n\nPrototype: def three_sum_exists(nums, target):",
+        "test_suite": "test_suite_79.py"
+    },
+    {
+        "identifier": "Problem80",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that analyzes a string to identify the first character that does not repeat elsewhere in the string. The function should return this non-repeating character, or None if all characters in the string are repeated.\n\nPrototype: def first_non_repeating_char(s):",
+        "test_suite": "test_suite_80.py"
+    },
+    {
+        "identifier": "Problem81",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that processes a string and identifies the longest contiguous sequence within it that reads the same forwards and backwards. The function should return this longest palindromic substring.\n\nPrototype: def longest_palindromic_substring(s):",
+        "test_suite": "test_suite_81.py"
+    },
+    {
+        "identifier": "Problem82",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that takes two lists of integers, both sorted in ascending order, and merges them into a single, sorted list. The resulting list should be in ascending order, combining elements from both input lists.\n\nPrototype: def merge_sorted_lists(list1, list2):",
+        "test_suite": "test_suite_82.py"
+    },
+    {
+        "identifier": "Problem83",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine capable of generating all possible unique combinations of valid parentheses pairs for a given number n. The function should return a list of these valid parentheses combinations, each comprising n pairs.\n\nPrototype: def generate_parenthesis(n):",
+        "test_suite": "test_suite_83.py"
+    },
+    {
+        "identifier": "Problem84",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that takes a string and counts the number of occurrences of the exact sequence 'abc'. The function should return the total count of this specific sequence's appearances in the string.\n\nPrototype: def count_abc_sequences(s):",
+        "test_suite": "test_suite_84.py"
+    },
+    {
+        "identifier": "Problem85",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that processes an array of integers and a target sum, aiming to find all unique combinations of four numbers (quadruplets) within the array that sum up to the target sum. The function should return a list of these quadruplets.\n\nPrototype: def four_sum(nums, target):",
+        "test_suite": "test_suite_85.py"
+    },
+    {
+        "identifier": "Problem86",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that examines a string to determine if it represents a valid numerical value. This includes checking for integers, decimals, and an optional sign (either '+' or '-'). The function should return a boolean indicating the validity of the string as a number.\n\nPrototype: def is_valid_number(s):",
+        "test_suite": "test_suite_86.py"
+    },
+    {
+        "identifier": "Problem87",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that processes a list of integers and counts the number of unique triplets within the list whose elements sum up to zero. The function should return the total count of these zero-sum triplets.\n\nPrototype: def three_sum_zero(nums):",
+        "test_suite": "test_suite_87.py"
+    },
+    {
+        "identifier": "Problem88",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine that takes a string and calculates the length of the longest consecutive sequence of the same character. The function should return the length of this sequence.\n\nPrototype: def longest_consecutive_char(s):",
+        "test_suite": "test_suite_88.py"
+    },
+    {
+        "identifier": "Problem89",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that analyzes a list of integers and counts the number of pairs within the list that have a difference of exactly 2. The function should return the count of such pairs.\n\nPrototype: def count_pairs_with_difference(nums):",
+        "test_suite": "test_suite_89.py"
+    },
+    {
+        "identifier": "Problem90",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that takes a string and reverses the order of the characters in the string, while keeping the words in their original order. The function should return this modified string, with characters reversed but words in the same sequence.\n\nPrototype: def reverse_string_keep_words_order(s):",
+        "test_suite": "test_suite_90.py"
+    },
+    {
+        "identifier": "Problem91",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that processes an array of integers to calculate the sum of elements situated between the first occurrences of the two largest numbers in the array, excluding the largest numbers themselves. The function should return this sum.\n\nPrototype: def sum_between_largest(nums):",
+        "test_suite": "test_suite_91.py"
+    },
+    {
+        "identifier": "Problem92",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that takes a non-empty string and determines the most frequently occurring word within it. If multiple words are tied for the most frequent, the function should return the one that appears earliest in the string.\n\nPrototype: def most_frequent_word(s):",
+        "test_suite": "test_suite_92.py"
+    },
+    {
+        "identifier": "Problem93",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine capable of evaluating a string that represents a mathematical expression. This expression will contain only non-negative integers and the operators '+', '-', and '*'. The function should compute and return the result of this expression without considering any parentheses.\n\nPrototype: def evaluate_expression(expr):",
+        "test_suite": "test_suite_93.py"
+    },
+    {
+        "identifier": "Problem94",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that transforms a list of integers into a new list. In this new list, each element at index i should be the product of all the numbers in the original array except the one at i. The calculation must be done without using division. The function should return this new list.\n\nPrototype: def product_except_self(nums):",
+        "test_suite": "test_suite_94.py"
+    },
+    {
+        "identifier": "Problem95",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that receives two strings representing binary numbers. The function's task is to calculate the product of these binary numbers and return the result as a binary string. Both input strings consist solely of '1's and '0's and are non-empty.\n\nPrototype: def multiply_binary(a, b):",
+        "test_suite": "test_suite_95.py"
+    },
+    {
+        "identifier": "Problem96",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDevelop a Python function that analyzes each element in a list of integers and counts how many elements to its right are smaller than it. The function should return a list with the count for each element in the original list.\n\nPrototype: def smaller_elements_right(nums):",
+        "test_suite": "test_suite_96.py"
+    },
+    {
+        "identifier": "Problem97",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nImplement a Python method that takes a list of integers and sorts them in ascending order using the bubble sort algorithm. The function should return the sorted list.\n\nPrototype: def bubble_sort(nums):",
+        "test_suite": "test_suite_97.py"
+    },
+    {
+        "identifier": "Problem98",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nConstruct a Python routine that processes a non-empty list of non-negative integers. Each integer represents the maximum number of steps that can be taken forward from that position. The function should determine if it's possible to reach the end of the list starting from the first element and return a boolean indicating this.\n\nPrototype: def can_jump_to_end(nums):",
+        "test_suite": "test_suite_98.py"
+    },
+    {
+        "identifier": "Problem99",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nEngineer a Python function that generates a list of all prime numbers less than a given integer n. The function should return this list of prime numbers.\n\nPrototype: def primes_less_than(n):",
+        "test_suite": "test_suite_99.py"
+    },
+    {
+        "identifier": "Problem100",
+        "prompt": "You will act as a code generator. Generate Python code to solve the problem below. The output should be executable Python code only, without comments or extra text.\n\nDesign a Python algorithm that transforms a list of integers into a new list where each element is the sum of itself and its adjacent elements in the original list. For the first and last elements, consider only one neighbor. The function should return this new list of summed elements.\n\nPrototype: def sum_with_neighbors(nums):",
+        "test_suite": "test_suite_100.py"
+    }
+  ]
+}
