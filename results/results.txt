@@ -1,0 +1,2 @@
+Pre obfuscation: 67.4% 62 correct, 92 ran without error, 8 ran with error
+Post obfuscation: 63.7% 56 correct, 88 ran without error, 12 ran with error

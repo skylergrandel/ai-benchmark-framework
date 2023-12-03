@@ -1,0 +1,31 @@
+{
+    "overall": 65.51383399209486,
+    "by_tag": {
+        "obfuscation": [
+            63.63636363636363,
+            67.3913043478261
+        ],
+        "python": [
+            63.63636363636363,
+            67.3913043478261
+        ]
+    },
+    "by_project": [
+        {
+            "output": 63.63636363636363,
+            "tags": [
+                "obfuscated",
+                "python"
+            ],
+            "name": "obfuscation"
+        },
+        {
+            "output": 67.3913043478261,
+            "tags": [
+                "obfuscation",
+                "python"
+            ],
+            "name": "obfuscation"
+        }
+    ]
+}
